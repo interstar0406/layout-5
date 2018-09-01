@@ -1,0 +1,23 @@
+// Các Mixin viết vào đây
+=tag_before_after($mau: darken($whites,50%))
+	position: relative
+	margin-bottom: 1rem
+	&:before,
+	&:after
+		content: ''
+		display: block
+		background: $mau
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+	&:before
+		width: 72px
+		height: 3px
+		bottom: -5px
+	&:after
+		width: 15px
+		height: 15px
+		border-radius: 50%
+		bottom: -10px
+		background-color: rgb(255, 255, 255)
+		border: 3px solid $mau

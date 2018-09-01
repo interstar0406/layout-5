@@ -1,0 +1,84 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+//- Body
+block body
+	//- section.home_nay
+		.container
+			.item
+				.title-do
+					i.fa.fa-home
+					|
+					| hehe
+				.body Dạ, bạn vui lòng đợi bên mình kiểm tra lại thông tin và báo bạn sớm nhất có thể bạn nhé. 
+			.item
+				.title-do
+					i.fa.fa-home
+					|
+					| hehe
+				.body Dạ, bạn vui lòng đợi bên mình kiểm tra lại thông tin và báo bạn sớm nhất có thể bạn nhé. Dạ, mình đã chuyển câu hỏi của bạn sang bộ phận kỹ thuật rồi ạ. Sẽ cố gắng trả lời bạn trong 24 giờ bạn nha. Mong bạn thông cảm vì bất tiện này và vui lòng đợi bạn nhé.  
+			.item
+				.title-do
+					i.fa.fa-home
+					|
+					| hehe
+				.body Dạ, bạn vui lòng đợi bên mình kiểm tra lại thông tin và báo bạn sớm nhất có thể bạn nhé. 
+			.item
+				.title-do
+					i.fa.fa-home
+					|
+					| hehe
+				.body Dạ, bạn vui lòng đợi bên mình kiểm tra lại thông tin và báo bạn sớm nhất có thể bạn nhé. 
+	section.home_services
+		.container
+			.row
+				.col.title
+						h1 
+							b TIN TỨC
+			.row
+				.col-md-4.itemss
+					a(href="javascript:void(0)")
+						figure
+							.boximg
+								img(src="./img/home_services_1.png", alt="")
+							figcaption
+								h2 Trung tâm đào tạo IT chuyên ngiệp
+								time 26/08/2018
+								p qja ènqa èb iabkcn nacoa nc uhna ècauk cnakcbnacen uoaoecnk a ncnaèuo naeoncaecnca
+				.col-md-4.itemss
+					a(href="javascript:void(0)")
+						figure
+							.boximg
+								img(src="./img/home_services_2.png", alt="")
+							figcaption
+								h2 Trung tâm đào tạo IT chuyên ngiệp
+								time 26/08/2018
+								p qja ènqa èb iabkcn nacoa nc uhna ècauk cnakcbnacen uoaoecnk a ncnaèuo naeoncaecnca
+				.col-md-4.itemss
+					a(href="javascript:void(0)")
+						figure
+							.boximg
+								img(src="./img/home_services_3.png", alt="")
+							figcaption
+								h2 Trung tâm đào tạo IT chuyên ngiệp
+								time 26/08/2018
+								p qja ènqa èb iabkcn nacoa nc uhna ècauk cnakcbnacen uoaoecnk a ncnaèuo naeoncaecnca
+
+	section.home_clients
+		.owl-carousel.owl-theme
+			.item
+				img(src="../img/home_clients_1.png", alt="")
+			.item
+				img(src="../img/home_clients_2.png", alt="")
+			.item
+				img(src="../img/home_clients_3.png", alt="")
+			.item
+				img(src="../img/home_clients_4.png", alt="")
+			.item
+				img(src="../img/home_clients_5.png", alt="")
+			.item
+				img(src="../img/home_clients_6.png", alt="")

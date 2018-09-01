@@ -1,0 +1,82 @@
+
+.home_services
+	font-family: Roboto
+	.title
+		margin-top: 5rem
+		h1
+			font-size: 30px
+			line-height: 1.2
+			text-align: center
+			+tag_before_after($vien)
+	.itemss
+		a
+			margin-top: 2rem
+			text-decoration: none
+			figure
+				.boximg
+					overflow: hidden
+					position: relative
+					&:before
+						content: ''
+						display: block
+						height: 100%
+						width: 100%
+						position: absolute
+						z-index: 1
+					img
+						width: 100%
+						-webkit-filter: grayscale(100%)
+						filter: grayscale(100%)
+						transition: 1s all ease-in-out
+				&:hover
+					.boximg
+						&:before
+							box-shadow: 0 0 0 3px $vien inset
+				figcaption
+					h2
+						color: rgb(0, 0, 0)
+						font-size: 16px
+						margin-top: .5rem
+					time 
+						color: lighten($blacks,70%)
+						font-size: 14px
+						color: #a8a8a8
+					p
+						font-size: 14px
+						overflow: hidden
+						text-overflow: ellipsis
+						color: #a8a8a8
+				&:hover,
+				&:active
+					.boximg
+						img
+							-webkit-filter: grayscale(0%)
+							filter: grayscale(0%)
+							transform: scale(1.2)
+					p
+						color: $blacks
+					h2
+						color: $vien
+.home_clients
+	
+	.owl-carousel
+		.item
+			position: relative
+			img
+				width: 120px
+				height: 30px
+		.owl-nav
+			button
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				color: $whites
+				background: #083e64
+				width: 20px
+				height: 20px
+			i
+				font-size: 1rem
+			.owl-left
+				left: 50%
+			.owl-right
+				right: 50%
