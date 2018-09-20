@@ -331,28 +331,29 @@ body
 		text-align: center
 		color: white
 	.owl-carousel
-		position: relative
-		display: flex
-		justify-content: center
-		align-items: center
 		margin-bottom: 2rem
-		.owl-item
-			margin: 0 2rem
-			img
-				width: 80px
-				height: 30px
-		.owl-nav
-			button
-				position: absolute
-				top: 50%
-				transform: translateY(-50%)
-				color: $whites
-				background: #083e64
-				width: 20px
-				height: 20px
-			i
-				font-size: 1rem
-			.owl-left
-				left: 50%
-			.owl-right
-				right: 50%
+	+media-breakpoint-up(sm)
+		.owl-carousel
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			.owl-item
+				margin: 0 2rem
+				img
+					width: 80px
+					height: 30px
+			.owl-nav
+				button
+					position: absolute
+					top: 30%
+					transform: translateY(-50%)
+					color: $whites
+					background: #a8a8a8
+					width: 20px
+					height: 20px
+				.owl-prev
+					left: -25px
+				.owl-next
+					right: -25px
+
