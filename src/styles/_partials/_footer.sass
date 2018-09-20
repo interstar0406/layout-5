@@ -1,3 +1,84 @@
 footer
-	img 
-		max-width: 200px
+	
+	.linkfooter
+		font-family: "Myriad Pro"
+		background: lighten(#000, 20%)
+		h4
+			color: yellow
+			text-transform: uppercase
+			font-size: 1.2rem
+		p
+			color: darken(#fff, 25%)
+			font-size: 1rem
+		a
+			color: darken(#fff, 25%)
+			font-size: 1rem
+			text-decoration: none
+		.link-reference
+			display: flex
+			justify-content: center
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				text-decoration: none
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				background: #bfbfbf
+				color: #000
+				margin: 0 .5rem
+				&:hover,
+				&:active
+					background: yellow
+	.copyright
+		background: yellow
+		font-size: .7rem
+		.text
+			display: flex
+			align-items: center
+		.btn-input
+			display: block
+			text-align: center
+			.btn-text
+				border: none
+				background: #000
+				color: #fff
+				width: 100%
+				display: block
+				margin: 0 auto
+				padding-left: 10px
+				line-height: 2rem
+				/* Chrome, Opera, Safari */
+				::-webkit-input-placeholder 
+				font-style: italic
+				/* Firefox 19+ */
+				::-moz-placeholder 
+				font-style: italic
+				/* IE 10+ */
+				:-ms-input-placeholder 
+				font-style: italic
+				/* Firefox 18- */
+				:-moz-placeholder 
+				font-style: italic
+	+media-breakpoint-up(sm)
+		.linkfooter
+			.link-reference
+				justify-content: left
+		.copyright
+			.btn-input
+				position: relative
+				.btn-text
+					display: inline
+					line-height: 1.5rem
+					width: 70%
+				.btn-submit
+					padding: 1px 4px
+					display: inline
+					position: absolute
+					transform: translateX(-50%) translateY(-50%)
+					top: 50%
+					right: 16%
+					background: yellow
+					color: #000
+					border: none
